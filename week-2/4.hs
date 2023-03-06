@@ -3,7 +3,7 @@ iseven :: Int -> String
 iseven x = if x `mod` 2 == 0 then "Even" else "Odd"
 
 -- main function
-main :: IO ()
+-- main :: IO ()
 main = do
     print (iseven 5)
     print (iseven 6)

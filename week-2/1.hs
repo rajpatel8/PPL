@@ -3,6 +3,7 @@ double :: Int -> Int
 double x = x + x
 
 -- main function
-main :: IO () 
+-- main :: IO () 
+main :: IO ()
 main = do
     print (double 2)
