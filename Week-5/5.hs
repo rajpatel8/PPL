@@ -10,7 +10,6 @@ zipa [] _ = []
 zipa _ [] = []
 zipa (x:xs) (y:ys) = (x,y) : zip xs ys
 
-
 -- main function
 main = do 
     print $ positions 1 [1,2,3,4,1,2,3,4,1,2,3,4]

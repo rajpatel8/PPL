@@ -10,3 +10,4 @@ capitalizeFirstLetter xs = [toUpper (head xs)] ++ (tail xs)
 main :: IO ()
 main  = do 
     print $ capitalizeFirstLetter "amrita"
+    print $ capitalizeFirstLetter "rAJKUAMR"
