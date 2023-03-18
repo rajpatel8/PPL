@@ -1,8 +1,10 @@
 -- 
 odd1 :: Int -> Int
 odd1 x
-    | x%2 == 0 
-    |otherwise x = 1
+    | x `mod` 2 == 0 = 0
+    | otherwise = 1
 
-main = do () 
-    print(odd1 2)
+-- main function
+main = do
+    print $ odd1 1
+    print $ odd1 2

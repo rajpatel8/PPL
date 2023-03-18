@@ -10,8 +10,26 @@ zipa [] _ = []
 zipa _ [] = []
 zipa (x:xs) (y:ys) = (x,y) : zip xs ys
 
--- main function
+zipb :: [a] -> [b] -> [(a,b)]
+zipb [] _ = []
+zipb _ [] = []
+zipb (x:xs) (y:ys) = (x,y) : zipb xs ys
+
+zipc :: [a] -> [b] -> [(a,b)]
+zipc [] [] = []
+zipc _ _ = []
+
+zipd :: [a] -> [b] -> [(a,b)]
+zipd [] _ = []
+zipd _ [] = []
+zipd (x:xs) (y:ys) = (x,y) : zipd xs ys
+
 main = do 
     print $ positions 1 [1,2,3,4,1,2,3,4,1,2,3,4]
     print $ positions 1 [1,2,3,4,1,2,3,4,1,2,3,4,1]
     print $ positions 1 [1,2,3,4,1,2,3,4,1,2,3,4,1,1]
+
+    print $ zipa [1,2,3] [4,5,6]
+    print $ zipb [1,2,3] [4,5,6]
+    print $ zipc [1,2,3] [4,5,6]
+    print $ zipd [1,2,3] [4,5,6]
