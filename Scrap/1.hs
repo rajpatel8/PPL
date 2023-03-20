@@ -12,6 +12,8 @@ fib 0 = 0
 fib 1 = 1
 fib n = fib (n - 1) + fib (n - 2)
 
+-- Practice Questions
+
 -- Product of two list 
 product' :: [Int] -> [Int] -> [Int]
 product' xs ys = [x * y | x <- xs, y <- ys]
