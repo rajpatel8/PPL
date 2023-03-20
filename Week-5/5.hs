@@ -9,7 +9,7 @@ zipa :: [a] -> [b] -> [(a,b)]
 zipa [] _ = []
 zipa _ [] = []
 zipa (x:xs) (y:ys) = (x,y) : zip xs ys
-
+ 
 zipb :: [a] -> [b] -> [(a,b)]
 zipb [] _ = []
 zipb _ [] = []
@@ -28,8 +28,9 @@ main = do
     print $ positions 1 [1,2,3,4,1,2,3,4,1,2,3,4]
     print $ positions 1 [1,2,3,4,1,2,3,4,1,2,3,4,1]
     print $ positions 1 [1,2,3,4,1,2,3,4,1,2,3,4,1,1]
-
+ 
     print $ zipa [1,2,3] [4,5,6]
     print $ zipb [1,2,3] [4,5,6]
     print $ zipc [1,2,3] [4,5,6]
     print $ zipd [1,2,3] [4,5,6]
+  

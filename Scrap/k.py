@@ -1,2 +1,0 @@
-# insatll pandas as script
-
