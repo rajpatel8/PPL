@@ -45,8 +45,9 @@ double'' :: [Int] -> [Int]
 double'' [] = []
 double'' (x:xs) = (x * 2) : double'' xs 
 
-addup :: (Ord a, Num a) => [a] -> [a] -- 
-addup ns = filter greaterOne(map (+1) ns) -- This fun
+-- Function to double each element of a list using map
+addup :: (Ord a, Num a) => [a] -> [a] 
+addup ns = filter greaterOne(map (+1) ns)
     where 
         greaterOne n = n > 1
         addOne n = n + 1
