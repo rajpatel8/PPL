@@ -107,8 +107,11 @@ randomR :: a2 -> b0 -> a0 -> (a, b)
 randomR = undefined
 
 getStdGen :: IO a1
-getStdGen = getStdGen
+getStdGen = getStdGen   
 
+-- reverse a list using foldl function
+reverse'' :: [a] -> [a]
+reverse'' xs = foldl (\acc x -> x : acc) [] xs
 
 
 -- main function
@@ -117,7 +120,12 @@ main = do
     -- print (length' [1,2,3])
     -- print (reverse' [[1,2,3], [4,5,6], [7,8,9]] )
     -- print ( wordLengths "This is a sentence") 
-    print (mul 2 3 4)
+    -- print (mul 2 3 4)
     -- print (respond "Hello!")
     -- print(primetilln 10)
     -- print(coinToss)
+    print(reverse'' [1,2,3,4,5])
+
+-- Problem statement for Music REcommendatin System
+-- Problem Statement : 
+-- The problem statement 
