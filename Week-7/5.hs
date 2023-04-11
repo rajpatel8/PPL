@@ -13,6 +13,5 @@ foldle :: (b -> a -> b) -> b -> [a] -> b
 foldle f z []     =  z
 foldle f z (x:xs) =  foldle f (f z x) xs
 
-
 main = do
     print (rmdups [1,2,2,3,3,3,1,1])

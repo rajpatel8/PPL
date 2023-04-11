@@ -1,4 +1,5 @@
--- Use foldr and foldl to define functions lengthr and lengthl respectively to find the number of elements in a list.
+-- Use foldr and foldl to define functions lengthr and lengthl 
+-- respectively to find the number of elements in a list.
 
 lengthr :: [a] -> Int
 lengthr xs = foldr (\_ n -> n + 1) 0 xs

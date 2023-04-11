@@ -115,7 +115,7 @@ reverse'' xs = foldl (\acc x -> x : acc) [] xs
 
 
 -- main function
-main = do
+-- main = do
     -- print (sumEvenOdd [1..4] )
     -- print (length' [1,2,3])
     -- print (reverse' [[1,2,3], [4,5,6], [7,8,9]] )
@@ -124,7 +124,7 @@ main = do
     -- print (respond "Hello!")
     -- print(primetilln 10)
     -- print(coinToss)
-    print(reverse'' [1,2,3,4,5])
+    -- print(reverse'' [1,2,3,4,5])
 
 -- Problem statement for Music REcommendatin System
 -- Problem Statement : 

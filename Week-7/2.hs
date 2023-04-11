@@ -1,4 +1,5 @@
--- Find the smallest element of a list by defining functions minr and minl with the implementation of foldr and foldl respectively.
+-- Find the smallest element of a list by defining functions minr 
+-- and minl with the implementation of foldr and foldl respectively.
 
 minr :: Ord a => [a] -> a
 minr xs = foldr min (head xs) xs

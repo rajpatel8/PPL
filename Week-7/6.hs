@@ -4,4 +4,4 @@ approxe :: Int -> Double
 approxe n = foldl (\x y -> x + 1 / fromIntegral (product [1..y])) 1 [1..n]
 
 main = do
-    print (approxe 1000000)
+    print (approxe 10)
